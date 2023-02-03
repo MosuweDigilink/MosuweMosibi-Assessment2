@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="extentlisteners.ExtentListeners"/>
+    </listeners>
+
+    <test name="Unsuccessful Login">
+        <classes>
+            <class name="login.UnsuccessfulLogin"/>
+        </classes>
+    </test>
+    
+    <test name="Successful Login">
+        <classes>
+            <class name="login.LoginTests"></class>
+        </classes>
+    </test>
+
+    <test name="Complete Checkout">
+        <classes>
+            <class name="Checkout.TestCheckout"/>
+        </classes>
+    </test>
+</suite>
